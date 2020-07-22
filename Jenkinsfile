@@ -1,6 +1,7 @@
 // Example of Jenkins pipeline script
 
 pipeline {
+agent any
   stages {
     stage("Build") {
        steps {
@@ -9,7 +10,7 @@ pipeline {
 
           // Compile a Java file. This requires JDKconfiguration from Jenkins
           javac HelloWorld.java
-          
+
           // Execute the compiled Java binary called HelloWorld. This requires JDK configuration from Jenkins
           java HelloWorld
 
