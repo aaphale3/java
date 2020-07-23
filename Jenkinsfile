@@ -6,6 +6,7 @@ pipeline {
         script {
           echo 'Stage 1'
         }
+        javac HelloWorldv2.java
       }
     }
   stage('Stage 2') {
