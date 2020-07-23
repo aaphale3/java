@@ -5,8 +5,9 @@ pipeline {
       steps {
         script {
           echo 'Stage 1'
+          javac HelloWorldv2.java
         }
-        javac HelloWorldv2.java
+
       }
     }
   stage('Stage 2') {
